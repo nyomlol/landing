@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nyom</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Jua", sans-serif;
+      background-color: #0e0e10;
+      color: #e5e5e7;
+      min-height: 100dvh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      user-select: none;
+      cursor: default;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: min(20vw, 28vh);
+      font-weight: 400;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      text-shadow:
+        0 0 30px rgba(255, 255, 255, 0.12),
+        0 0 60px rgba(255, 255, 255, 0.06);
+      animation: fadeIn 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    footer {
+      position: absolute;
+      bottom: max(1rem, 2.5vh);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      text-align: center;
+      font-size: clamp(0.85rem, 2.2vw, 1.05rem);
+      width: 90%;
+      max-width: 600px;
+    }
+
+    footer span {
+      opacity: 0.85;
+      line-height: 1.4;
+    }
+
+    footer .subdomain-info {
+      opacity: 0.65;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.96);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>₍^. .^₎⟆</h1>
+
+  <footer>
+    <span class="subdomain-info">To get a subdomain, send a PR <a href="https://github.com/nyomlol/dns" target="_blank"
+        rel="noopener noreferrer">here</a></span>
+    <span>Made with ❤️ by <a href="https://github.com/star122o" target="_blank"
+        rel="noopener noreferrer">starry</a>!</span>
+  </footer>
+</body>
+
+</html>
